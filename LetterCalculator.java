@@ -1,6 +1,6 @@
 import java.util.*;
 import java.lang.reflect.Field;
-public class LetterCalculator 
+public class LetterCalculator
 {
 	private int numA;
 	private int numB;
@@ -28,36 +28,8 @@ public class LetterCalculator
 	private int numX;
 	private int numY;
 	private int numZ;
-	
-	boolean negA = false;
-	boolean negB = false;
-	boolean negC = false;
-	boolean negD = false;
-	boolean negE = false;
-	boolean negF = false;
-	boolean negG = false;
-	boolean negH = false;
-	boolean negI = false;
-	boolean negJ = false;
-	boolean negK = false;
-	boolean negL = false;
-	boolean negM = false;
-	boolean negN = false;
-	boolean negO = false;
-	boolean negP = false;
-	boolean negQ = false;
-	boolean negR = false;
-	boolean negS = false;
-	boolean negT = false;
-	boolean negU = false;
-	boolean negV = false;
-	boolean negW = false;
-	boolean negX = false;
-	boolean negY = false;
-	boolean negZ = false;
-	boolean negTotal = false;
-	
-	public LetterCalculator(int amount) 
+
+	public LetterCalculator(int amount)
 	{
 		numA = amount;
 		numB = amount;
@@ -89,7 +61,7 @@ public class LetterCalculator
 	HashMap<Character, Integer> mapList = new HashMap<Character, Integer>();
 	HashMap<Character, Integer> negList = new HashMap<Character, Integer>();
 	public void decreaseLetter(char c)
-	{	
+	{
 		switch(c)
 		{
 		case 'a':
@@ -100,7 +72,7 @@ public class LetterCalculator
 				negList.put(c, numA);
 			}
 			break;
-			
+
 		case 'b':
 			numB--;
 			mapList.put(c, numB);
@@ -109,7 +81,7 @@ public class LetterCalculator
 				negList.put(c, numB);
 			}
 			break;
-			
+
 		case 'c':
 			numC--;
 			mapList.put(c, numC);
@@ -118,7 +90,7 @@ public class LetterCalculator
 				negList.put(c, numC);
 			}
 			break;
-			
+
 		case 'd':
 			numD--;
 			mapList.put(c, numD);
@@ -127,7 +99,7 @@ public class LetterCalculator
 				negList.put(c, numD);
 			}
 			break;
-			
+
 		case 'e':
 			numE--;
 			mapList.put(c, numE);
@@ -136,7 +108,7 @@ public class LetterCalculator
 				negList.put(c, numE);
 			}
 			break;
-			
+
 		case 'f':
 			numF--;
 			mapList.put(c, numF);
@@ -145,7 +117,7 @@ public class LetterCalculator
 				negList.put(c, numF);
 			}
 			break;
-			
+
 		case 'g':
 			numG--;
 			mapList.put(c, numG);
@@ -154,7 +126,7 @@ public class LetterCalculator
 				negList.put(c, numG);
 			}
 			break;
-			
+
 		case 'h':
 			numH--;
 			mapList.put(c, numH);
@@ -163,7 +135,7 @@ public class LetterCalculator
 				negList.put(c, numH);
 			}
 			break;
-			
+
 		case 'i':
 			numI--;
 			mapList.put(c, numI);
@@ -172,7 +144,7 @@ public class LetterCalculator
 				negList.put(c, numI);
 			}
 			break;
-			
+
 		case 'j':
 			numJ--;
 			mapList.put(c, numJ);
@@ -181,7 +153,7 @@ public class LetterCalculator
 				negList.put(c, numJ);
 			}
 			break;
-			
+
 		case 'k':
 			numK--;
 			mapList.put(c, numK);
@@ -190,7 +162,7 @@ public class LetterCalculator
 				negList.put(c, numK);
 			}
 			break;
-			
+
 		case 'l':
 			numL--;
 			mapList.put(c, numL);
@@ -199,7 +171,7 @@ public class LetterCalculator
 				negList.put(c, numL);
 			}
 			break;
-			
+
 		case 'm':
 			numM--;
 			mapList.put(c, numM);
@@ -208,7 +180,7 @@ public class LetterCalculator
 				negList.put(c, numM);
 			}
 			break;
-			
+
 		case 'n':
 			numN--;
 			mapList.put(c, numN);
@@ -217,7 +189,7 @@ public class LetterCalculator
 				negList.put(c, numN);
 			}
 			break;
-			
+
 		case 'o':
 			numO--;
 			mapList.put(c, numO);
@@ -226,7 +198,7 @@ public class LetterCalculator
 				negList.put(c, numO);
 			}
 			break;
-			
+
 		case 'p':
 			numP--;
 			mapList.put(c, numP);
@@ -235,7 +207,7 @@ public class LetterCalculator
 				negList.put(c, numP);
 			}
 			break;
-			
+
 		case 'q':
 			numQ--;
 			mapList.put(c, numQ);
@@ -244,7 +216,7 @@ public class LetterCalculator
 				negList.put(c, numQ);
 			}
 			break;
-			
+
 		case 'r':
 			numR--;
 			mapList.put(c, numR);
@@ -253,7 +225,7 @@ public class LetterCalculator
 				negList.put(c, numR);
 			}
 			break;
-			
+
 		case 's':
 			numS--;
 			mapList.put(c, numS);
@@ -262,7 +234,7 @@ public class LetterCalculator
 				negList.put(c, numS);
 			}
 			break;
-			
+
 		case 't':
 			numT--;
 			mapList.put(c, numT);
@@ -271,7 +243,7 @@ public class LetterCalculator
 				negList.put(c, numT);
 			}
 			break;
-			
+
 		case 'u':
 			numU--;
 			mapList.put(c, numU);
@@ -280,9 +252,9 @@ public class LetterCalculator
 				negList.put(c, numU);
 			}
 			break;
-			
+
 		case 'v':
-			numV--;	
+			numV--;
 			mapList.put(c, numV);
 			if(numV < 0)
 			{
@@ -297,7 +269,7 @@ public class LetterCalculator
 				negList.put(c, numW);
 			}
 			break;
-			
+
 		case 'x':
 			numX--;
 			mapList.put(c, numX);
@@ -306,7 +278,7 @@ public class LetterCalculator
 				negList.put(c, numX);
 			}
 			break;
-			
+
 		case 'y':
 			numY--;
 			mapList.put(c, numY);
@@ -315,7 +287,7 @@ public class LetterCalculator
 				negList.put(c, numY);
 			}
 			break;
-			
+
 		case 'z':
 			numZ--;
 			mapList.put(c, numZ);
@@ -324,33 +296,33 @@ public class LetterCalculator
 				negList.put(c, numZ);
 			}
 			break;
-			
+
 		}//end switch case
-		
+
 	}//end decrease letter
-	
+
 	public HashMap<Character, Integer> getHash()
 	{
 		return mapList;
 	}
-	
+
 	public HashMap<Character, Integer> getNegHash()
 	{
 		return negList;
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }//end class
