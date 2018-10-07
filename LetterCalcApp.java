@@ -1,3 +1,7 @@
+/*
+*Name: Jesus L. H.
+*/
+
 import java.util.*;
 
 public class LetterCalcApp

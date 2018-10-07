@@ -1,3 +1,6 @@
+/*
+*Name: Jesus L. H.
+*/
 import java.util.*;
 import java.lang.*;
 public class LetterView
@@ -20,7 +23,6 @@ public class LetterView
 		System.out.print("What message would you want to check?: ");
 		String message = sc.nextLine();
 		return message.toLowerCase();
-
 	}
 
 	public char getFirstCharacter(String passedMessage)

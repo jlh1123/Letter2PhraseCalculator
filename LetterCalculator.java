@@ -1,3 +1,7 @@
+/*
+*Name: Jesus L. H.
+*/
+
 import java.util.*;
 import java.lang.reflect.Field;
 public class LetterCalculator
