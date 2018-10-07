@@ -1,4 +1,5 @@
 import java.util.*;
+import java.lang.*;
 public class LetterView
 {
 	private Scanner sc;
@@ -34,8 +35,8 @@ public class LetterView
 
 	public void printNegatives(Character e, Integer p)
 	{
-		char d = e.toUppercase();
-		System.out.println("\nYou lack: "+(p*-1)+" "+d+"\'s");
+
+		System.out.println("\nYou lack: "+(p*-1)+" "+Character.toUpperCase(e)+"\'s");
 	}
 
 

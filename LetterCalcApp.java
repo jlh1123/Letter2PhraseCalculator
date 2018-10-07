@@ -1,5 +1,5 @@
 import java.util.*;
-import java.lang.*;
+
 public class LetterCalcApp
 {
 	public static void main(String[] args)
@@ -17,10 +17,9 @@ public class LetterCalcApp
 
 		}
 		HashMap<Character, Integer> negativeMap = cal.getNegHash();
-		System.out.println("size of negatives map: " + negativeMap.size());
 		if(negativeMap.size() > 0)
 		{
-			view.printMsg("You cannot complete this phrase with the given amount of letters.");
+			view.printMsg("\nYou cannot complete this phrase with the given amount of letters.");
 			char a = 'a';
 			for(int k = 0; k < 26; k++)
 			{
