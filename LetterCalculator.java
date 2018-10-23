@@ -1,5 +1,5 @@
 /*
-*Name: Jesus L. H.
+*Author: Jesus L. H.
 */
 
 import java.util.*;

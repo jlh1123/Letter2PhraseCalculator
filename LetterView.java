@@ -1,5 +1,5 @@
 /*
-*Name: Jesus L. H.
+*Author: Jesus L. H.
 */
 import java.util.*;
 import java.lang.*;
@@ -20,7 +20,7 @@ public class LetterView
 
 	public String getMessage()
 	{
-		System.out.print("What message would you want to check?: ");
+		System.out.print("\nWhat message would you want to check?: ");
 		String message = sc.nextLine();
 		return message.toLowerCase();
 	}
@@ -35,10 +35,15 @@ public class LetterView
 		System.out.println(pMsg);
 	}
 
+	public void printPositives(Character e, Integer p)
+	{
+		System.out.println("You have: " + p + " " + Character.toUpperCase(e) + "\'s remaining.");
+	}
+
 	public void printNegatives(Character e, Integer p)
 	{
 
-		System.out.println("\nYou lack: "+(p*-1)+" "+Character.toUpperCase(e)+"\'s");
+		System.out.println("\nYou lack: "+ (p*-1) +" "+Character.toUpperCase(e)+"\'s");
 	}
 
 
